@@ -1,0 +1,32 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-animation {
+    position: relative;
+    width: 100px; /* Initial width */
+    height: 100px; /* Initial height */
+    animation: imageMove 4s linear infinite; /* Change duration, timing function, and iteration as needed */
+  }
+
+  @keyframes imageMove {
+    0% {
+      transform: translateX(-50%) rotate(0);
+      width: 100px; /* Initial width */
+      height: 100px; /* Initial height */
+    }
+    50% {
+      transform: translateX(50%) rotate(180deg);
+      width: 150px; /* Intermediate width */
+      height: 150px; /* Intermediate height */
+    }
+    100% {
+      transform: translateX(calc(50vw - 100px)) rotate(360deg);
+      width: 200px; /* Final width */
+      height: 200px; /* Final height */
+    }
+  }
