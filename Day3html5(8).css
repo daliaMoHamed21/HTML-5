@@ -1,0 +1,22 @@
+
+  
+  .tiger {
+    position: absolute;
+    animation: moveTiger 10s linear infinite;
+  }
+  
+  @keyframes moveTiger {
+    0% {
+      left:0;
+      transform: rotateY(180deg);
+    }
+ 
+    50% {
+       left:90%;
+    }
+   
+    100% {
+      left:0;
+    }
+  }
+  
