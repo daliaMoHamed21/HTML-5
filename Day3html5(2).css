@@ -1,0 +1,9 @@
+
+ @font-face {
+    font-family: itiFont;
+    src: url(ge_ss_two_medium.ttf), url(ge_ss_two_medium.eot);
+}
+
+ p {
+    font-family: itiFont;
+} 
