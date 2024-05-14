@@ -1,0 +1,5 @@
+p {
+    column-count: 4;
+    column-gap: 30px;
+    column-rule: 3px solid;
+}
