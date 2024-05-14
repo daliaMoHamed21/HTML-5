@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+</head>
+<body>
+    <div class="slider">
+        <div class="slide active">
+          <img src="Resources/smiley.png" alt="Slide 1">
+        </div>
+        <div class="slide">
+          <img src="Resources/logo.png" alt="Slide 2">
+        </div>
+        <div class="slide">
+          <img src="Resources/sad.png" alt="Slide 3">
+        </div>
+      </div>
+
+      <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(n) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (n + slides.length) % slides.length;
+        slides[currentSlide].classList.add('active');
+        }
+
+        // Automatically switch slides every 5 seconds
+        setInterval(() => {
+        showSlide(currentSlide + 1);
+        }, 5000);
+
+      </script>
+      
+    
+</body>
+</html>
