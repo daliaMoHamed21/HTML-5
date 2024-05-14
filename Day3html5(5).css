@@ -1,0 +1,16 @@
+.image-container {
+    width: 500px; 
+    height: 500px; 
+    overflow: hidden;
+    position: relative;
+  }
+  .image-container img {
+  
+    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, height 0.4s ease-in-out;
+  }
+
+  .image-container:hover img {
+    transform: rotate(20deg);
+    width: 520px;
+    height: 520px;
+  }
